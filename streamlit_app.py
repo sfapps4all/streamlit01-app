@@ -1,4 +1,5 @@
-import streamlit
+import streamlit as slt
 
-streamlit.title("Streamlit header")
-print("Test print")
+slt.title("Streamlit header")
+slt.header("SL sub header")
+slt.text("Text portion")
