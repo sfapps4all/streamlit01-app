@@ -1,6 +1,6 @@
 import streamlit as slt
 
-streamlit.header('Breakfast Menu')
-streamlit.text('Omega 3 & Blueberry Oatmeal')
-streamlit.text('Kale, Spinach & Rocket Smoothie')
-streamlit.text('Hard-Boiled Free-Range Egg')
+slt.header('Breakfast Menu')
+slt.text('Omega 3 & Blueberry Oatmeal')
+slt.text('Kale, Spinach & Rocket Smoothie')
+slt.text('Hard-Boiled Free-Range Egg')
