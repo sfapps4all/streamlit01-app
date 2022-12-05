@@ -13,7 +13,7 @@ lit.header('🍌🥭 Build Your Own Fruit Smoothie 🥝🍇')
 my_fruit_list = my_fruit_list.set_index('Fruit')
 
 # Let's put a pick list here so they can pick the fruit they want to include 
-lit.multiselect("Pick some fruits:", list(my_fruit_list.index),['Avacado','Strawberry'])
+lit.multiselect("Pick some fruits:", list(my_fruit_list.index),['Avocado','Strawberry'])
 
 # Display the table on the page.
 lit.dataframe(my_fruit_list)
