@@ -1,7 +1,9 @@
-import streamlit as slt
+import streamlit as lit
 
-slt.header('Breakfast Menu ')
-slt.text('🥣 Omega 3 & Blueberry Oatmeal')
-slt.text('🥗 Kale, Spinach & Rocket Smoothie')
-slt.text('🐔 Hard-Boiled Free-Range Egg')
-slt.text('🥑🍞 Avacado toast')
+lit.header('Breakfast Menu ')
+lit.text('🥣 Omega 3 & Blueberry Oatmeal')
+lit.text('🥗 Kale, Spinach & Rocket Smoothie')
+lit.text('🐔 Hard-Boiled Free-Range Egg')
+lit.text('🥑🍞 Avacado toast')
+
+lit.header('🍌🥭 Build Your Own Fruit Smoothie 🥝🍇')
