@@ -17,4 +17,4 @@ fruits_selected = lit.multiselect("Pick some fruits:", list(my_fruit_list.index)
 fruits_to_show = my_fruit_list.loc[fruits_selected]
 
 # Display the table on the page.
-lit.dataframe(my_fruit_list)
+lit.dataframe(fruits_to_show)
