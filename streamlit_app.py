@@ -20,9 +20,9 @@ fruits_to_show = my_fruit_list.loc[fruits_selected]
 lit.dataframe(fruits_to_show)
 
 # New Section
-lit.header('Fruityvice fruit advcice')
+lit.header('Fruityvice fruit advice')
 import requests
-fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/"+"kiwi")
 #lit.text(fruityvice_response.json())
 
 # write your own comment -what does the next line do? 
