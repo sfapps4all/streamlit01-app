@@ -19,7 +19,8 @@ fruits_to_show = my_fruit_list.loc[fruits_selected]
 # Display the table on the page.
 lit.dataframe(fruits_to_show)
 
-
+# New Section
+lit.header('Fruityvice fruit advcice')
 import requests
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
 lit.text(fruityvice_response.json())
