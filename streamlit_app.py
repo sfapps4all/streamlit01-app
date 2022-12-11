@@ -50,6 +50,7 @@ lit.write('The user entered ', fruit_choice)
 
 
 lit.header("The fruit load list contains:")
+my_cnx = snowflake.connector.connect(**lit.secrets["snowflake"])
 
 def get_fruit_load_list():
     with my_cnx.cursor() as my_cur:
@@ -57,7 +58,6 @@ def get_fruit_load_list():
     return my_cur.fetchall() 
 
 if lit.button("Get Fruit Load List"):
-    my_cnx = snowflake.connector.connect(**lit.secrets["snowflake"])
     my_data_rows = get_fruit_load_list()
     lit.dataframe(my_data_rows)
 
@@ -69,7 +69,6 @@ def insert_row_snowflake(add_fruit_choice):
     
 add_fruit_choice = lit.text_input('What fruit would you like to add?')
 if lit.button("Add a Fruit to List"):
-    my_cnx = snowflake.connector.connect(**lit.secrets["snowflake"])
     my_data_rows = insert_row_snowflake(add_fruit_choice)
     lit.text(my_data_rows)
 
