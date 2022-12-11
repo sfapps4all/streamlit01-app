@@ -31,7 +31,7 @@ def get_fruitvice_data(fruit_choice):
     #lit.text(fruityvice_response.json())
     # write your own comment -what does the next line do? 
     fruityvice_normalized = pd.json_normalize(fruityvice_response.json())
-  return fruityvice_normalized
+    return fruityvice_normalized
     
 
 try:
