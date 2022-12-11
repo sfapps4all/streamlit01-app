@@ -65,7 +65,7 @@ if lit.button("Get Fruit Load List"):
 def insert_row_snowflake(add_fruit_choice):
     my_cnx = snowflake.connector.connect(**lit.secrets["snowflake"])
     with my_cnx.cursor() as my_cur:
-        my_cur.execute("insert into fruit_load_list value ('"+add_fruit_choice+"')")
+        my_cur.execute("insert into fruit_load_list values ('"+add_fruit_choice+"')")
         return 'Thanks for adding ', add_fruit_choice
     
 add_fruit_choice = lit.text_input('What fruit would you like to add?')
