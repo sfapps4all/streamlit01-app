@@ -40,7 +40,7 @@ try:
   if not fruit_choice:
     lit.error("Please select a fruit to get information.")
   else:    
-    fruitvice_response = get_fruitvice_data(fruit_choice)
+    fruityvice_response = get_fruitvice_data(fruit_choice)
     lit.dataframe(fruityvice_response)
 except URLError as e:
   lit.error()
