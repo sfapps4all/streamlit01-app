@@ -28,7 +28,7 @@ lit.header('Fruityvice fruit advice')
 
 try:
   fruit_choice = lit.text_input('What fruit would you like information about?')
-  if not fruit_choice"
+  if not fruit_choice:
     lit.error("Please select a fruit to get information.")
   else:    
     fruityvice_response = requests.get("https://fruityvice.com/api/fruit/"+fruit_choice)
